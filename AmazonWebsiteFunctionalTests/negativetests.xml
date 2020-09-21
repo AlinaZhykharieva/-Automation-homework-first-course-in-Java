@@ -1,0 +1,21 @@
+<suite name="NegativeTests">
+    <test name="SignInTest">
+        <classes>
+            <class name="tests.SignInTests">
+                <methods>
+                    <include name="signInWithEmptyEmailInput"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="AddToCartTests">
+        <classes>
+            <class name="tests.AddToCartTests"/>
+            <methods>
+                <include
+                        name="checkThatWhenProductSizeDoesNotSelectedAndAddToCartButtonClickedNoTransitionToTheQuickViewAfterAddToCartPage"/>
+                <include name="checkThatWhenUnavailableProductSelectedInDescriptionOfProductAppearsInscription"/>
+            </methods>
+        </classes>
+    </test>
+</suite>

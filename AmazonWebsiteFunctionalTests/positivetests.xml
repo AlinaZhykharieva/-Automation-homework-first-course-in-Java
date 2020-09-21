@@ -1,0 +1,33 @@
+<suite name="PositiveTests">
+    <test name="ProductFiltersTest">
+        <classes>
+            <class name="tests.ProductFiltersTest">
+                <methods>
+                    <include name="checkProductFilterByPrice"/>
+                    <include name="checkProductFiltersByBrandsAndAge"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="SearchTests">
+        <classes>
+            <class name="tests.SearchTests">
+                <methods>
+                    <include name="checkThatSearchResultsContainsSearchWord"/>
+                    <include name="checkThatURlContainsWordSelectedInDropdownListInSearch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="AddToCartTests">
+        <classes>
+            <class name="tests.AddToCartTests">
+                <methods>
+                    <include name="checkAmountItemAddedToCart"/>
+                    <include name="checkThatSubtotalToPayItemAddedToCartEqualsPriceThisItem"/>
+                    <include name="checkDeletionProductFromCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
